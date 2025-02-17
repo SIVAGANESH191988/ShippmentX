@@ -36,7 +36,7 @@ public class TaskAdapter extends RecyclerView.Adapter<TaskAdapter.TaskViewHolder
 
             // Check permission before showing notification
             if (ContextCompat.checkSelfPermission(context, Manifest.permission.POST_NOTIFICATIONS) == PackageManager.PERMISSION_GRANTED) {
-                NotificationHelper.showNotification(context, "Task Deleted", "You deleted: " + deletedTask);
+                NotificationHelper.showNotification(context, "Task Completed", "You deleted: " + deletedTask);
             }
         });
     }
